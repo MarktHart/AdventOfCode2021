@@ -1,0 +1,1 @@
+a=[int(b)for b in open('i')];print(sum(c<b for c,b in zip(a,a[1:])))

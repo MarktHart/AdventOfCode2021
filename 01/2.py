@@ -1,1 +1,1 @@
-*a,=map(int,open('i'));print(sum(b<c for b,c in zip(a,a[3:])))
+*a,=map(int,open('i'));print(sum(map(int.__lt__,a,a[3:])))

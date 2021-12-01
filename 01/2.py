@@ -1,1 +1,1 @@
-a=[int(b)for b in open('i')];b=[sum(c)for c in zip(a,a[1:],a[2:])];print(sum(c<d for c,d in zip(b,b[1:])))
+a=[*map(int,open('i'))];print(sum(b<c for b,c in zip(a,a[3:])))

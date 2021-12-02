@@ -1,1 +1,1 @@
-a=['c+','c-','b+=c*x;d+'];b=c=d=0;exec(';'.join(f"x={l[-2]};{a[ord(l[0])&3]}=x"for l in open('i')));print(d*b)
+b=c=d=0;exec(';'.join(f"x={l[-2]};{['c+','c-','b+=c*x;d+'][ord(l[0])&3]}=x"for l in open('i')));print(d*b)

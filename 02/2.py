@@ -1,0 +1,1 @@
+a={'u':['c-='],'d':['c+='],'f':['b+=c*','d+=']};b=c=d=0;exec(';'.join(f"{e}{l[-2]}"for l in open('i')for e in a[l[0]]));print(d*b)

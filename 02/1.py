@@ -1,0 +1,1 @@
+f=d=u=0;exec(";".join(f"{l[0]}+={l[-2]}"for l in open('i')));print(f*abs(d-u))

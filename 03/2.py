@@ -1,0 +1,1 @@
+r=lambda m,n=[*open('i')],d=0:r(m,[*filter(lambda x:(x[d]==sorted([*zip(*n)][d])[len(n)//2])^m,n)],d+1)if n[1:]else int(n[0],2);print(r(0)*r(1))

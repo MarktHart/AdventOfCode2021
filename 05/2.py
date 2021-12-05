@@ -1,1 +1,1 @@
-a=[[[int(d)for d in c.split(',')]for c in b.split('->')]for b in open('i')];f=lambda x,y:(x for _ in iter(int,1))if x==y else(i for i in range(x,y+(x<y)*2-1,(x<y)*2-1));b=sorted(e for x,y in[zip(*c)for c in a]for e in zip(f(*x),f(*y)));print(len(set(e for e,f in zip(b,b[1:])if e==f)))
+a=[[map(int,c.split(','))for c in b.split('->')]for b in open('i')];f=lambda x,y:iter(lambda:x,~x)if x==y else range(x,y+(x<y)*2-1,(x<y)*2-1);b=sorted(e for x,y in[zip(*c)for c in a]for e in zip(f(*x),f(*y)));print(len(set(e for e,f in zip(b,b[1:])if e==f)))

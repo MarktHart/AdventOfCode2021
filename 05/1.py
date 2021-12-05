@@ -1,1 +1,1 @@
-a=[[[int(d)for d in c.split(',')]for c in b.split('->')]for b in open('i')];b=sorted((m,n)for x,y in[zip(*c)for c in a]if x[0]==x[1]or y[0]==y[1]for m in range(min(x),max(x)+1)for n in range(min(y),max(y)+1));print(len(set(e for e,f in zip(b,b[1:])if e==f)))
+a=[[map(int,c.split(','))for c in b.split('->')]for b in open('i')];b=sorted((m,n)for x,y in[zip(*c)for c in a]if x[0]==x[1]or y[0]==y[1]for m in range(min(x),max(x)+1)for n in range(min(y),max(y)+1));print(len(set(e for e,f in zip(b,b[1:])if e==f)))

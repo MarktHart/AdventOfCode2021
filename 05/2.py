@@ -1,0 +1,1 @@
+a=[[[int(d)for d in c.split(',')]for c in b.split(' -> ')]for b in open('i')];f=lambda x,y:(x for _ in iter(int,1))if x==y else(i for i in range(x,y+(x<y)*2-1,(x<y)*2-1));b=[zip(f(*x),f(*y))for x,y in[[d for d in zip(*c)]for c in a]];c=sorted(e for d in b for e in d);print(len(set(e for e,f in zip(c,c[1:])if e==f)))

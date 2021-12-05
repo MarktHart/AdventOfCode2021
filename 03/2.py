@@ -1,1 +1,1 @@
-a=lambda b,c=[*open('i')],d=0:a(b,[*filter(lambda e:(e[d]==sorted([*zip(*c)][d])[len(c)//2])^b,c)],d+1)if c[1:]else int(c[0],2);print(a(0)*a(1))
+a=lambda b,c=[*open('i')],d=0:a(b,[e for e in c if(e[d]==sorted([*zip(*c)][d])[len(c)//2])^b],d+1)if c[1:]else int(c[0],2);print(a(0)*a(1))

@@ -1,0 +1,1 @@
+a=sorted(map(int,next(open('i')).split(',')));print(sum(abs(b-a[len(a)//2])for b in a))

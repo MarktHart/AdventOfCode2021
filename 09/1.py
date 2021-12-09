@@ -1,0 +1,1 @@
+a=[[*map(int,b)]for*b,c in open('i')];b=enumerate;c=lambda x,y:[d[y]for d in a[x+1:x+2]+a[x-1:x]]+a[x][y+1:y+2]+a[x][y-1:y];print(sum(g+1for d,e in b(a)for f,g in b(e) if g<min(c(d,f))))

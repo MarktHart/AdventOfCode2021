@@ -1,0 +1,1 @@
+*a,=map(int,next(open('i')).split(','));print(min(sum((b-c)**2+abs(b-c)for b in a)for c in a)//2)

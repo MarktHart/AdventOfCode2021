@@ -1,0 +1,1 @@
+d='_([{<>}])';e=d.index;s=lambda a,b=0:s(a[1:],b*5+e(a[0]))if a else b;g=lambda q,r,*t:(g([r]+q,*t)if e(r)<5else 0if d[-e(r)]!=q[0]else g(q[1:],*t))if t else s(q);o=sorted(p for r in open('i')if(p:=g([],*r)));print(o[len(o)//2])

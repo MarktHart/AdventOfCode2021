@@ -1,0 +1,1 @@
+*d,=')]}>([{<';s=[3,57,1197,25137];e=d.index;g=lambda q,r,*t:((s[e(r)]if d[e(r)+4]!=q[0]else g(q[1:],*t))if e(r)<4else g([r[0]]+q,*t))if t else 0;print(sum(g([],*r)for*r,_ in open('i')))

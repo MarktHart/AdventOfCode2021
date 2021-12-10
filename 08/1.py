@@ -1,0 +1,1 @@
+print(sum(len(x)in[2,4,3,7]for r in open('i')for x in r.split()[-4:]))

@@ -1,0 +1,1 @@
+d=[8,7,1,2,7,3,4,4,2,(5,2,1),3,(5,3,2),5,(5,3,1),0,(6,3,2),6,(6,3,1),9,(6,4,2)];a=len;e=lambda w,s,y:e(w,s+[r for r in map(set,w)if a(r)==y[1]or 3<a(s)and(a(r),a(r&s[3]),a(r&s[1]))==y[1]],y[2:])if y else s;print(sum(int("".join(str(d[e(w[:10],[],d).index(set(i))*2])for i in w[11:]))for w in map(str.split,open('i'))))

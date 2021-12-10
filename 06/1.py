@@ -1,1 +1,2 @@
 a=[next(open('i'))[:-1].split(',').count(str(c))for c in range(7)];c=d=e=0;exec("a[c%7]+=d;d,e=e,a[c%7]-d;c+=1;"*80);print(sum(a)+e+d)
+print(sum([0,1401,1191,1154,1034,950,905][int(a)]for a in next(open('i')).split(',')))

@@ -1,1 +1,2 @@
 a=[next(open('i'))[:-1].split(',').count(str(c))for c in range(7)];c=d=e=0;exec("a[c%7]+=d;d,e=e,a[c%7]-d;c+=1;"*256);print(sum(a)+e+d)
+print(sum([0,6206821033,5617089148,5217223242,4726100874,4368232009,3989468462][int(a)]for a in next(open('i')).split(',')))
